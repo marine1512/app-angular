@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar>ul{
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    color: aqua;
+}
