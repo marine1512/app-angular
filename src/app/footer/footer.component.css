@@ -1,3 +1,18 @@
 .footer{
-    background-color: antiquewhite;
+    display: flex;
+    color: #F9D0A3;
+    background-color: #DA001E;
+    border: 0.5em solid #151217;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image{
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+}
+#chien{
+    width: 9em;
 }

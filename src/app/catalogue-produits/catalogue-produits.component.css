@@ -1,0 +1,25 @@
+.catalogue{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin-bottom: 1em;
+}
+
+.card{
+
+    background-color: #FDD90B;
+    opacity: 80%;
+}
+.size{
+    width: 14em;
+    margin: 1em;
+    display: flex;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
