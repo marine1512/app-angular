@@ -23,6 +23,12 @@
 }
 
 .navbar a:hover{
-    text-decoration: underline;
     color: #151217;
+}
+#panier{
+    margin-left: 0.5em;
+}
+.fa-solid {
+    font-size: 2em;
+    color: #FDD90B;
 }

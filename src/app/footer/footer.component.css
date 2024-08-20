@@ -4,8 +4,22 @@
     background-color: #DA001E;
     border: 0.5em solid #151217;
     padding: 1em;
-    align-items: center;
     justify-content: space-around;
+}
+
+.footer a{
+    color: #F9D0A3;
+    text-decoration: none;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer_column p{
+    margin-top: 10px;
 }
 
 .image{
@@ -15,4 +29,9 @@
 }
 #chien{
     width: 9em;
+}
+.reseaux i{
+    font-size: 2em;
+    margin-right: 10px;
+    
 }
