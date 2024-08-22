@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { produitsService } from '../produits.services';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  title = "Découvrir le cef"
+  produits: any[] = [];
+  constructor(private produitsService: produitsService) {}
+  ngOnInit() {
+    this.produits = this.produitsService.produits;
+  }
 
 }

@@ -13,17 +13,13 @@
 }
 
 
-.navbar a, .navbar ul{
+.navbar ul{
     font-size: 1.3em;
     display: flex;
     gap: 1em;
     list-style-type: none;
     text-decoration: none;
     color: #F9D0A3;
-}
-
-.navbar a:hover{
-    color: #151217;
 }
 #panier{
     margin-left: 0.5em;

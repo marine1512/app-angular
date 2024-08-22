@@ -3,5 +3,9 @@
     <h3>Figurines inspirées de la bande
     dessinée Astérix et Obélix.</h3>
 </div>
-<app-catalogue-produits></app-catalogue-produits>
+
+<ul>
+    <li *ngFor ="let produit of produits">{{ produit.titre}}</li>
+</ul>
+
 
