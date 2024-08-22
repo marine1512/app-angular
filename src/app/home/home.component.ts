@@ -12,5 +12,7 @@ export class HomeComponent {
   ngOnInit() {
     this.produits = this.produitsService.produits;
   }
-
 }
+
+
+
