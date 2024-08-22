@@ -16,7 +16,7 @@ export class produitsService {
         },
         {
             "id": 2,
-            "image": "",
+            "image": "./assets/produit_2.png",
             "titre": "Idéfix",
             "description": "Figurine peinte à la main représentant le personnage de Idéfix.",
             "dimension": "30cm",
@@ -25,7 +25,7 @@ export class produitsService {
         },
         {
             "id": 3,
-            "image": "",
+            "image": "./assets/produit_3.webp",
             "titre": "Vercingétorix",
             "description": "Figurine peinte à la main représentant le personnage de Vercingétorix.",
             "dimension": "30cm",
@@ -34,7 +34,7 @@ export class produitsService {
         },
         {
             "id": 4,
-            "image": "",
+            "image": "./assets/produit_4.webp",
             "titre": "Assurancetourix",
             "description": "Figurine peinte à la main représentant le personnage de Assurancetourix.",
             "dimension": "30cm",
