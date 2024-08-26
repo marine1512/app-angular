@@ -7,7 +7,7 @@ export class produitsService {
     produits = [
         {
             "id": 1,
-            "image": "./assets/produit_1.png",
+            "src": "/assets/produit_1.png",
             "titre": "Astérix",
             "description": "Figurine peinte à la main représentant le personnage de Astérix.",
             "dimension": "30cm",
@@ -21,7 +21,7 @@ export class produitsService {
             "description": "Figurine peinte à la main représentant le personnage de Idéfix.",
             "dimension": "30cm",
             "matiere": "PVC",
-            "prix": "10€"
+            "prix": "9€"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@ export class produitsService {
             "description": "Figurine peinte à la main représentant le personnage de Vercingétorix.",
             "dimension": "30cm",
             "matiere": "PVC",
-            "prix": "10€"
+            "prix": "11€"
         },
         {
             "id": 4,
@@ -39,7 +39,7 @@ export class produitsService {
             "description": "Figurine peinte à la main représentant le personnage de Assurancetourix.",
             "dimension": "30cm",
             "matiere": "PVC",
-            "prix": "10€"
+            "prix": "11€"
         }
     ];
 

@@ -21,13 +21,3 @@ h3{
     text-align: center;
     margin-top: 1em;
 }
-.catalogue{
-    display: flex;
-}
-
-.produits{
-    border: 0.5em solid black;
-    margin: 1em;
-    padding: 1em;
-    background-color: #fdd90b8e;
-}

@@ -1,0 +1,18 @@
+.filterBar{
+    display: flex;
+    gap: 0.5em;
+    justify-content: flex-end;
+    margin-right: 1em;
+    align-items: center;
+}
+.catalogue{
+    display: flex;
+}
+
+.produits{
+    border: 0.5em solid black;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fdd90b8e;
+    cursor: pointer;
+}

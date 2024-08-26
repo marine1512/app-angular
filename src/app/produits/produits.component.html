@@ -1,1 +1,21 @@
-<p>produits works!</p>
+<div class="filterBar">
+    <label>Trier : </label>
+
+    <select >
+      <option >--   --</option>
+      <option value="Prix-+">Prix par ordre Croissant</option>
+      <option value="Prix+-">Prix par ordre Décroissant</option>
+
+    </select>
+</div>
+
+<div class="catalogue">
+    <div *ngFor ="let produit of ( produits ) " class="produits">
+        <img src="produit.image" />
+        <h3>{{ produit.titre}}</h3>
+        <p><u><b>Déscription :</b></u> {{ produit.description}}</p>
+        <p><u><b>Dimension :</b></u> {{ produit.dimension}}</p>
+        <p><u><b>Matière :</b></u> {{ produit.matiere}}</p>
+        <p>{{ produit.prix}}</p>
+    </div>
+</div>
