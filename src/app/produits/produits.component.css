@@ -5,8 +5,17 @@
     margin-right: 1em;
     align-items: center;
 }
+.filterBar>button{
+    background-color: aqua;
+    border-radius: 50%;
+}
+
 .catalogue{
     display: flex;
+}
+
+.img{
+    width:15em ;
 }
 
 .produits{
@@ -14,5 +23,11 @@
     margin: 1em;
     padding: 1em;
     background-color: #fdd90b8e;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p {
+    display: flex;
+    
 }
