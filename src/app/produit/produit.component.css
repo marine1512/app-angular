@@ -1,0 +1,26 @@
+.fiche{
+        display : flex ;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 0.5em solid black;
+        margin-top: 2em;
+}
+
+.fiche>img {
+    width: 30em;
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: 0.5em solid #fdd90b;
+
+     }
+  
+#ficheProduit{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3em;
+}
+#ficheProduit>h3 {
+    text-decoration: underline;
+}

@@ -1,5 +1,6 @@
 .footer{
     display: flex;
+    flex-wrap: wrap;
     color: #F9D0A3;
     background-color: #DA001E;
     border: 0.5em solid #151217;
@@ -34,4 +35,11 @@
     font-size: 2em;
     margin-right: 10px;
     
+}
+
+@media screen and (max-width: 768px){
+    .footer {
+        flex-direction: column;
+        gap: 1em;
+    }
 }

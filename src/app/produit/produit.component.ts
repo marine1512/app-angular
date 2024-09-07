@@ -7,12 +7,12 @@ import  { produitsService } from "../produits.services"
   template:`
   <div class="fiche">
     <img src={{produit.image}} />
-    <div class="ficheProduit">
-            <h3>{{ produit.titre}}</h3>
-            <p><u><b>Déscription :</b></u> {{ produit.descriptionPlus}}</p>
+    <div id="ficheProduit">
+            <h3>{{ produit.titre | uppercase}}</h3>
+            <p><u><b>Description :</b></u> {{ produit.descriptionPlus}}</p>
             <p><u><b>Dimension :</b></u> {{ produit.dimension}}</p>
             <p><u><b>Matière :</b></u> {{ produit.matiere}}</p>
-            <p>{{ produit.prix }} €</p>
+            <p><u><b>Prix :</b></u> {{ produit.prix }} €</p>
     </div>
   </div>
 

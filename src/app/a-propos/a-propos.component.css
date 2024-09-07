@@ -1,0 +1,21 @@
+.a-propos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdd90b8e;
+    margin: 3em 6em 15em 6em;
+    padding: 2em;
+    gap: 2em;
+}
+.a-propos-texte {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+img {
+    width: 50%;
+}
+h3 {
+    margin-bottom: 3em;
+}

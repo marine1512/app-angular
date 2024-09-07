@@ -1,21 +1,31 @@
-.filterBar{
+.bars{
     display: flex;
-    gap: 0.5em;
-    justify-content: flex-end;
-    margin-right: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em;
+    gap: 1em;
     align-items: center;
 }
 .filterBar>button{
-    background-color: aqua;
-    border-radius: 50%;
+    background-color: #da001e4d;
+    margin-left: 1em;
+}
+.filterBar>button:focus{
+    background-color: #da001d00;
+}
+input {
+    background-color: #da001e4d;
+    margin-left: 1em;
 }
 
 .catalogue{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .img{
-    width:15em ;
+    width:20em ;
 }
 
 .produits{
@@ -27,7 +37,18 @@
     flex-direction: column;
     align-items: center;
 }
-.p {
+.p {
     display: flex;
     
+}
+.produits>button:hover {
+    color: #da001d;
+    border-color: #da001d;
+    background-color: #000000;
+    cursor: pointer;
+}
+.produits>button {
+    color: #000000;
+    background-color: #da001e4d;
+    cursor: pointer;
 }

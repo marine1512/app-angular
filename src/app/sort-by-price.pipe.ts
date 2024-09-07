@@ -13,5 +13,4 @@ export class SortByPricePipe implements PipeTransform {
     }
 
   }
-
 }

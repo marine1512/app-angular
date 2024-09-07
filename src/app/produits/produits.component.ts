@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { produitsService } from '../produits.services';
+import { NgForm, FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-produits',
@@ -9,6 +11,7 @@ import { produitsService } from '../produits.services';
 export class ProduitsComponent {
   produits: any[] = [];
   sortOrder: string = 'asc';
+  searchTerm: string = '';
   constructor(private produitsService: produitsService) {}
   ngOnInit() {
     this.produits = this.produitsService.produits;

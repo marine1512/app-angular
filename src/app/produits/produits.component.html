@@ -1,17 +1,25 @@
-<div class="filterBar">
-    Prix :
-    <button (click)="setOrder('asc')">par ordre Croissant</button>
-    <button (click)="setOrder('desc')">par ordre Décroissant</button>
+<div class="bars">
+    <div class="searchBar">
+        <label>Rechercher :</label>
+        <input type="text" [(ngModel)]="searchTerm" (change)="searchTerm=searchTerm">
+    </div>
+    <div class="filterBar">
+        Prix :
+        <button (click)="setOrder('asc')">par ordre Croissant</button>
+        <button (click)="setOrder('desc')">par ordre Décroissant</button>
+        </div>
 </div>
 
+
 <div class="catalogue">
-    <div *ngFor ="let produit of ( produits | sortByPrice:sortOrder) " class="produits">
-            <img class="img" src={{produit.image}} />
-            <h3>{{ produit.titre}}</h3>
-            <p><u><b>Déscription : </b></u> {{ produit.description }}</p>
-            <p><u><b>Dimension : </b></u> {{ produit.dimension}}</p>
-            <p><u><b>Matière : </b></u> {{ produit.matiere}}</p>
-            <p><u><b>Prix : </b></u>{{ produit.prix }} €</p>
-            <button [routerLink]=" ['/produits', produit.id ]">Voir produit</button>
+    <div *ngFor ="let produit of ( produits | sortByPrice:sortOrder | filterByName:searchTerm) " class="produits">
+            <img class="img" src={{produit.image}} />
+            <h3><u>{{ produit.titre | uppercase }}</u></h3>
+            <p><u><b>Description :</b></u> {{ produit.description }}</p>
+            <p><u><b>Dimension :</b></u> {{ produit.dimension}}</p>
+            <p><u><b>Matière :</b></u> {{ produit.matiere}}</p>
+            <p><u><b>Prix :</b></u> {{ produit.prix }} €</p>
+            <button [routerLink]="['/produits', produit.id]">Voir produit</button>
     </div>
 </div>
+
