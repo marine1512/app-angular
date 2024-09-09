@@ -8,8 +8,4 @@ import { ProduitsComponent } from '../produits/produits.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
 }
-
-
-

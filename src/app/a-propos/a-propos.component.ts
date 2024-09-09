@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './a-propos.component.css'
 })
 export class AProposComponent {
-
 }

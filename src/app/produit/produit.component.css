@@ -3,7 +3,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         border: 0.5em solid black;
-        margin-top: 2em;
+        margin: 2em;
 }
 
 .fiche>img {
