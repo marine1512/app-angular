@@ -9,14 +9,14 @@ import { NgForm, FormsModule } from '@angular/forms';
   styleUrl: './produits.component.css'
 })
 export class ProduitsComponent {
-  produits: any[] = [];
-  sortOrder: string = 'asc';
-  searchTerm: string = '';
+  produits: any[] = []; // Création d'un tableau pour les produits.
+  sortOrder: string = 'asc'; // Fonction pour le tri par prix. 
+  searchTerm: string = ''; // Fonction de recherche.
   constructor(private produitsService: produitsService) {}
   ngOnInit() {
     this.produits = this.produitsService.produits;
   }
   setOrder(order:string)  {
-    this.sortOrder = order;
+    this.sortOrder = order; // Tri du tableau.
   }
 }

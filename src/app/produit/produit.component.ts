@@ -6,7 +6,7 @@ import  { produitsService } from "../produits.services"
   selector: 'app-produit',
   template:`
   <div class="fiche">
-    <img src={{produit.image}} />
+    <img src={{produit.image}} />
     <div id="ficheProduit">
             <h3>{{ produit.titre | uppercase}}</h3>
             <p><u><b>Description :</b></u> {{ produit.descriptionPlus}}</p>
@@ -16,21 +16,21 @@ import  { produitsService } from "../produits.services"
     </div>
   </div>
 
-  ` ,
+  `,
   styleUrl: './produit.component.css'
 })
 export class ProduitComponent {
 
   private route = inject(ActivatedRoute);
-  produits:  any[]=[];
+  produits:  any[]=[]; // Création d'un tableau pour les produits.
   produit: any;
   
-  constructor(private produitsService: produitsService)  {}
+  constructor(private produitsService: produitsService) {}
 
   ngOnInit() {
-    this.produits = this.produitsService.produits;
+    this.produits = this.produitsService.produits; 
     this.route.params.subscribe( params => {
-      this.produit = this.produits.find(produit => produit.id === +params ['id'])
+      this.produit = this.produits.find(produit => produit.id === +params ['id']) // Affichage des produits selon leur ID.
    }) 
   }
 }
